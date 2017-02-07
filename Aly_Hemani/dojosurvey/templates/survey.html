@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='survey.css') }}">
+</head>
+<body>
+	<div id="webber">
+		<h1> MY FUCKING FORM</h1>
+		<form action='/result' method='post'>
+		<div>
+			<label for="name">Your Name:</label>
+			<input type="text" name="name">
+		</div>
+		<div>
+			<label for ="location">Dojo Location:</label>
+			<select name="location">
+				<option value="dallas">Dallas</option>
+				<option value="seattle">Seattle</option>
+				<option value="losangeles">Los Angeles</option>
+				<option value="sanfran">San Francisco</option>
+			</select>
+		</div>
+		<div>
+		<label for="language">Favorite Language</label>
+			<select name ="language">
+				<option value="python">Python</option>
+				<option value="html">HTML</option>
+				<option value="css">CSS</option>
+				<option value="python">Python</option>
+			</select>
+		</div>
+		<div>
+			<label for="comment">Comment (optional):</label>
+			<textarea name="message" rows="10" cols="150"></textarea>
+		</div>
+		<input type="submit" name="Submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
