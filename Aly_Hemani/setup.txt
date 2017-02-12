@@ -1,0 +1,6 @@
+open up mamp 
+start servers 
+open up mysql 
+add button
+connection name = whatever
+port value = 8889
