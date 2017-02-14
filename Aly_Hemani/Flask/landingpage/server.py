@@ -1,9 +1,10 @@
 from flask import Flask, render_template
+
 app = Flask(__name__)
 
 @app.route('/')
-def homepage():
-	return render_template('index.html', name='Aly')
+def main():
+	return render_template('index.html', name="Aly", times=10)
 
 @app.route('/ninjas')
 def ninjas():
@@ -13,4 +14,4 @@ def ninjas():
 def form():
 	return render_template('dojos.html')
 
-app.run(debug =True)
+app.run(debug=True)

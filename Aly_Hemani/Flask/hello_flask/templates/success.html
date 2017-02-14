@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>This is another Get route that serves a page</p>
+	<p> My name is {{name}}</p>
+	<p>The name we will say is {{name}}</p>
+	<p>The number of times we will say this is name is: {{times}}</p>
+	{% for x in range (0, times): %}
+	<p>{{name}}</p>
+	{% endfor %}
+	{% if name == "Aly" %}
+	<p>Hello {{name}}</p>
+	{% endif %}
+</body>
+</html>

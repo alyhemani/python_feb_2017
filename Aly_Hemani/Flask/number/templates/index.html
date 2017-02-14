@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number Game</title>
+</head>
+<body>
+	<h1>Welcome to the Great Number Game!</h1>
+	<h3> I am thinking of a a number between 1 and 100</h3>
+	<h3>Take a guess!</h3>
+	<form action="/guess" method="post">
+		<input type="text" name="number">
+		<div>
+			<p class="answer">{{session['answer']}}</p>
+		</div>
+		<input type="submit" name="submit" value="Submit">
+	</form>
+	<form action="/reset" method="post">
+		<input type="submit" name="reset" value="reset">
+	</form>
+</body>
+</html>
