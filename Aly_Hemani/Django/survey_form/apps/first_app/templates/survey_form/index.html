@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Survey Form</title>
 </head>
 <body>
-	{% with messages = get_flashed_messages() %}
-		{% if messages %}
-			{% for message in messages %}
-				<p>{{message}}</p>
-			{% endfor %}
-		{% endif %}
-	{% endwith %}
-	<form action="/result" method="post">
+	<h1>Survey Form</h1>
+	<form action="/process" method="post">
+		{% csrf_token %}
 		<div>Your name: <input type="text" name="name">
 		</div>
 		<div>

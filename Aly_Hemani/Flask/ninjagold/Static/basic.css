@@ -1,0 +1,21 @@
+#webber{
+	width:970px;
+	height:auto;
+	background-color:grey;
+}
+h1{
+	text-align:center;
+}
+.form{
+	display:inline-block;
+	width:200px;
+	border:solid black;
+	border-width:2px;
+	text-align:center;
+}
+#activities{
+	width:220px;
+	height:auto;
+	border:solid black;
+	border-width:2px;
+}
